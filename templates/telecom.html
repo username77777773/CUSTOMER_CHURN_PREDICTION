@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecom Churn Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0a2540, #1a4b6d);
+            color: white;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 8px;
+            width: 280px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e68900;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 Telecom Customer Churn Prediction</h1>
+        
+        <div class="content">
+            <h2>Reduce subscriber attrition in your telecom business</h2>
+            <p>The telecom industry faces some of the highest churn rates, with customers switching providers for better deals or service. Our AI-powered solution helps you:</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>Early Warning System</h3>
+                    <p>Identify at-risk customers 30-60 days before they churn with 92% accuracy.</p>
+                </div>
+                <div class="feature">
+                    <h3>Personalized Retention</h3>
+                    <p>Recommend tailored offers based on customer usage patterns and preferences.</p>
+                </div>
+                <div class="feature">
+                    <h3>Competitor Analysis</h3>
+                    <p>Detect when customers are comparing plans from other providers.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <h2>Ready to reduce your churn rate?</h2>
+            <div class="cta">
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="dataset" required>
+        <button type="submit" class="btn">Upload Dataset</button>
+    </form>
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Results</title>
+    <style>
+        body { text-align: center; background-color: #203a43; color: white; font-family: Arial, sans-serif; }
+        .container { padding: 20px; }
+        img { width: 60%; margin: 10px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Customer Churn Visualizations</h1>
+        {% for image in images %}
+            <img src="{{ url_for('static', filename='plots/' + image) }}" alt="Visualization">
+        {% endfor %}
+    </div>
+</body>
+</html>
