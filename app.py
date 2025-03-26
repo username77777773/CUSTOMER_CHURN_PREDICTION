@@ -1,15 +1,15 @@
 from flask import Flask, render_template
-from flask_ngrok import run_with_ngrok
+from pyngrok import ngrok
 
-# Initialize Flask app
-app = Flask(__name__)
+app = Flask(__name__, template_folder='/content/CUSTOMER_CHURN_PREDICTION/templates')
 
-# Set up Ngrok to make the app accessible from the internet
-run_with_ngrok(app)
+# Start ngrok and get the public URL
+public_url = ngrok.connect(5000).public_url
+print(f"Public URL: {public_url}")
 
-@app.route('/')
-def home():
-    return render_template('index.html')  # Renders the 'index.html' file
+@app.route("/")
+def index():
+    return render_template("index.html")
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(port=5000)
